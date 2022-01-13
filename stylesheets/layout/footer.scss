@@ -1,0 +1,32 @@
+footer{
+    background-color: #353535;
+    
+    ul{  
+    list-style: none;
+    margin: 0px;
+    padding: 25px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+
+
+    display: flex;
+    justify-content: space-around;
+
+
+    }
+    li{
+        padding: 15px 15px 15px 0px;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }  
+}
+
+@media all and (max-width: 750px) {
+    footer{
+        ul{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.title_restaurants{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 200px;
+        height: auto;
+    }
+    a{
+        position: absolute;
+        left: 30px;
+        i{
+            font-size: 30px;
+        }
+    }
+}
+.hero_title{
+    height : 300px;
+    display : flex;
+    flex-direction : column-reverse; 
+    background-size: cover;
+    background-image: url("img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    .title{
+        display : flex; 
+        flex-direction : row; 
+        justify-content : space-between;
+        padding : 30px;
+        background-color : $grey;
+        border-radius : 50px 50px 0px 0px;
+        i{
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            margin: 0%;
+        }
+    }
+}
+
+.menu{
+    background-color: $grey;
+    padding: 25px;
+    padding-top: 0px;
+    width: 27%;
+    min-width: 430px;
+    h2{
+        margin: 0px;
+        padding-bottom: 15px;  
+    }
+}
+.menu_title{
+    display: flex;
+    flex-direction: column;
+    .border{
+        border-top: 5px solid $tertiaire;
+        width: 50px;
+        padding-bottom: 30px;
+    }
+}
+.command{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: $grey;
+}
+.menu_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $grey;
+}

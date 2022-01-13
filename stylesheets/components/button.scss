@@ -1,0 +1,53 @@
+
+// bouton " Nouveau " 
+.new_button_position{
+display: flex;
+flex-direction: row-reverse;
+
+    .button_new{
+        margin: 15px;
+        position: absolute;
+        width: 120px;
+        height: 35px;
+        background-color: $tertiaire;
+        border: none;
+        border-radius: 3px;   
+    }
+}
+
+ .hero_button{
+    background-image: linear-gradient(to right bottom, #ff79da, #e76ed9, #ce65d8, #b25dd7, #9356d5);
+    color: $white;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    box-shadow: $grey 1px 1px 1px 1px;
+    margin: 15px 0px 15px 0px;
+    &:hover{
+        transition : transform 400ms;
+        transform: scale(1.15);
+        cursor: pointer;
+    }
+    &:active{
+        transform: scale(1.25);
+    }
+}
+.command_button{
+    background-image: linear-gradient(to right bottom, #ff79da, #e76ed9, #ce65d8, #b25dd7, #9356d5);
+    color: $white;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    box-shadow: $grey 1px 1px 1px 1px;
+    width: 200px;
+    &:hover{
+        transition : transform 400ms;
+        transform: scale(1.15);
+        cursor: pointer;
+    }
+    &:active{
+        transform: scale(1.25);
+    }
+}

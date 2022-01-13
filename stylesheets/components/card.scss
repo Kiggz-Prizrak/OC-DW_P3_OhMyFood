@@ -1,0 +1,127 @@
+
+// Page accueil 
+//// Card restaurants 
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px ;
+    @include shadow;
+    margin-bottom: 30px;
+    min-width: 22%;
+    img{
+    
+        height: auto;
+    }
+    .cardContent{
+        transition: all 100ms;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+           
+    }
+        h3{
+            margin: 0px 0px 15px 0px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        p{
+            margin: 0%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }   
+        i{
+            font-size: 30px;
+        }
+        i.heart_empty{
+            font-size: 30px;
+        }
+    .heart_position{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            cursor: pointer;
+             i.heart_hover{
+                display: block;
+                font-size: 32px;
+                
+            }
+        }
+    }
+}
+
+// Page Restaurant
+///// Card menu 
+
+.repas{
+    transition: 2s;
+    animation: slideDown 3s;
+    cursor: pointer;
+    min-width: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    h3{
+        margin: 0px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    p{
+        margin: 0px;
+        padding-left: 15px;
+        padding-bottom: 15px ;
+    }
+    .typeRepas{
+        width: 100%;
+        .typeRepasFoot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            padding-right: 15px; 
+            flex-wrap: wrap;
+        }
+    }
+    .valid{
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiaire;
+        color: $white;
+        width: 0px;
+        transition: transform 5000ms;    
+    }
+    &:hover{
+        .valid{
+            animation: validSlide 75ms;
+            
+            width: 100px;
+            display: flex;
+            i{
+                transition : transform 400ms;
+                transform: rotate(360deg);
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media all and (max-width: 700px) { 
+    .repas{
+        width: 100%;
+        min-width: 100px;
+        margin-right: 0px;
+    }
+    
+}

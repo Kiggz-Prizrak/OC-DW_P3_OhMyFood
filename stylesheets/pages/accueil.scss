@@ -1,0 +1,58 @@
+
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    padding: 20px;
+    @include shadow;
+}
+.localisation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    box-shadow: inset 0px 2px 4px  #858585;
+        p{
+            padding-left: 15px;
+        }
+        /*input{
+            border: none;
+            background-color: #EAEAEA;
+            font-size: 20px;
+        }*/
+}
+.hero{
+    background-color: $grey;
+    padding: 25px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fonctionnement{
+    background-color: $white;
+    padding: 25px;
+}
+.fonctionnement_filter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.restaurant_list{
+    background-color: $grey;
+    padding: 25px;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    a{
+        width: 100%;
+    }
+}

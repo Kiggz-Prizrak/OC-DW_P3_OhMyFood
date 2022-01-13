@@ -1,0 +1,41 @@
+// 1. Apparition des blocs de menu
+@keyframes slideDown{
+    from{
+        transform: translateY(-25px);
+        opacity : 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+// 2. Apparation du bouton de validation sur la card repas
+@keyframes validSlide{
+    from{
+        transform: translateX(70px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+// 3. Bloc Loader
+@keyframes loader_anim{
+    0%{
+        display: block;
+        opacity: 1;
+        visibility: visible ;
+    }
+    99%{
+        display: block;
+        opacity: 0;
+        visibility: visible;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(360deg);
+    }
+    
+}

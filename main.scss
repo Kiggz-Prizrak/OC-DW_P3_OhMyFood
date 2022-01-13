@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'stylesheets/abstract/variables',
+  'stylesheets/abstract/animations',
+  'stylesheets/abstract/mixins';
+// 3. Base stuff
+@import
+  'stylesheets/base/base',
+  'stylesheets/base/fonts',
+  'stylesheets/base/typography',
+  'stylesheets/base/helpers';
+
+// 4. Layout-related sections
+@import
+  'stylesheets/layout/header',
+  'stylesheets/layout/body',
+  'stylesheets/layout/footer';
+
+// 5. Components
+@import
+  'stylesheets/components/card',
+  'stylesheets/components/img',
+  'stylesheets/components/filter',
+  'stylesheets/components/icon',
+  'stylesheets/components/loader',
+  'stylesheets/components/button';
+
+// 6. Page-specific styles
+@import
+'stylesheets/pages/accueil',
+'stylesheets/pages/restaurants';
+
