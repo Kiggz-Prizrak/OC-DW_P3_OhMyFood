@@ -1,3 +1,31 @@
 @mixin shadow {
     box-shadow :1px 1px 10px #858585;
 }
+
+@mixin hero_title {
+    height: 600px;
+    display : flex;
+    flex-direction : column-reverse; 
+    background-size: cover;
+    
+    .title{
+        display : flex; 
+        flex-direction : row; 
+        justify-content : space-around;
+        padding : 30px;
+        background-color : $grey;
+        border-radius : 50px 50px 0px 0px;
+        margin-bottom: -2px;
+        i{
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            margin: 0%;
+        }
+    }
+
+    
+}

@@ -15,31 +15,22 @@
         }
     }
 }
-.hero_title{
-    height : 300px;
-    display : flex;
-    flex-direction : column-reverse; 
-    background-size: cover;
+.hero_title--laPaletteDuGout{
+    @include hero_title;
     background-image: url("img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    .title{
-        display : flex; 
-        flex-direction : row; 
-        justify-content : space-between;
-        padding : 30px;
-        background-color : $grey;
-        border-radius : 50px 50px 0px 0px;
-        i{
-            font-size: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        h1{
-            margin: 0%;
-        }
-    }
 }
-
+.hero_title--LaNoteEnchantee{
+    @include hero_title;
+    background-image: url("img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.hero_title--aLaFrancaise{
+    @include hero_title;
+    background-image: url("img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.hero_title--leDeliceDesSens{
+    @include hero_title;
+    background-image: url("img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
 .menu{
     background-color: $grey;
     padding: 25px;
@@ -72,4 +63,13 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: $grey;
+    padding-top: 25px;
+}
+
+
+@media all and (max-width: 960px) { 
+    .hero_title{
+        height: 300px;
+    }
+    
 }
