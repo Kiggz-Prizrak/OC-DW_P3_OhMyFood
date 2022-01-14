@@ -245,7 +245,7 @@ img {
   color: #7E7E7E;
   font-weight: bold;
   position: absolute;
-  margin-left: 40px;
+  margin-left: 2.7%;
 }
 .filter .filterContent {
   font-weight: bold;
@@ -263,6 +263,14 @@ img {
   color: #9356DC;
 }
 
+@media all and (max-width: 550px) {
+  .filter {
+    width: 100%;
+  }
+  .filter i {
+    margin-left: 9%;
+  }
+}
 i.heart_hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
@@ -393,6 +401,7 @@ i.footer_icon {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .fonctionnement {
@@ -447,6 +456,7 @@ i.footer_icon {
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
+  background-position: center;
   background-image: url("img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 .hero_title--laPaletteDuGout .title {
@@ -473,6 +483,7 @@ i.footer_icon {
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
+  background-position: center;
   background-image: url("img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 .hero_title--LaNoteEnchantee .title {
@@ -499,6 +510,7 @@ i.footer_icon {
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
+  background-position: center;
   background-image: url("img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 .hero_title--aLaFrancaise .title {
@@ -525,6 +537,7 @@ i.footer_icon {
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
+  background-position: center;
   background-image: url("img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 .hero_title--leDeliceDesSens .title {

@@ -23,9 +23,9 @@
             color: $darkgrey;
             font-weight: bold;
             position: absolute;
-            margin-left: 40px;
+            margin-left: 2.7%;
         }
-        
+    
         .filterContent{
             font-weight: bold;
         }
@@ -39,5 +39,14 @@
     background-color: lighten($primaire, 25);
     i.filter_icon{
         color: $primaire;
+    }
+}
+
+@media all and (max-width: 550px) { 
+    .filter{
+        width: 100%;
+        i{
+            margin-left : 9%;
+        }
     }
 }
