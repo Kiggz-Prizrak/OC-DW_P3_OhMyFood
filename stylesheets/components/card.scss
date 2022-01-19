@@ -2,6 +2,22 @@
 // Page accueil 
 //// Card restaurants 
 
+.new_button_position{
+    display: flex;
+    flex-direction: row-reverse;
+    
+        .button_new{
+            @include position_midle;
+            margin: 15px;
+            position: absolute;
+            width: 120px;
+            height: 35px;
+            background-color: $tertiaire;
+            border: none;
+            border-radius: 3px; 
+            font-weight: bold;  
+        }
+    }
 .card{
     display: flex;
     flex-direction: column;
@@ -12,10 +28,9 @@
     @include shadow;
     margin-bottom: 30px;
     min-width: 22%;
-    img{
+    height: 375px;
+   
     
-        height: auto;
-    }
     .cardContent{
         transition: all 100ms;
         padding: 20px;
@@ -23,8 +38,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        
-           
+        img{
+            object-fit: cover;
+        }
     }
         h3{
             margin: 0px 0px 15px 0px;
@@ -44,6 +60,7 @@
         i.heart_empty{
             font-size: 30px;
         }
+        
     .heart_position{
         display: flex;
         align-items: center;
@@ -84,6 +101,10 @@
         margin: 0px;
         padding-left: 15px;
         padding-bottom: 15px ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
     }
     .typeRepas{
         width: 100%;
@@ -92,7 +113,6 @@
             flex-direction: row;
             justify-content: space-between; 
             padding-right: 15px; 
-            flex-wrap: wrap;
         }
     }
     .valid{
@@ -101,13 +121,18 @@
         background-color: $tertiaire;
         color: $white;
         width: 0px;
-        transition: transform 5000ms;    
+        transition: transform 5000ms;  
+          
     }
     &:hover{
+        .typeRepas{
+            width: 75%;
+        }
         .valid{
             animation: validSlide 75ms;
+            width: 25%; 
             
-            width: 100px;
+            
             display: flex;
             i{
                 transition : transform 400ms;

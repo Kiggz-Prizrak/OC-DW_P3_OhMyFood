@@ -2,6 +2,12 @@
     box-shadow :1px 1px 10px #858585;
 }
 
+@mixin position_midle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin hero_title {
     height: 600px;
     display : flex;

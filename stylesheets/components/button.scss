@@ -1,19 +1,6 @@
 
 // bouton " Nouveau " 
-.new_button_position{
-display: flex;
-flex-direction: row-reverse;
 
-    .button_new{
-        margin: 15px;
-        position: absolute;
-        width: 120px;
-        height: 35px;
-        background-color: $tertiaire;
-        border: none;
-        border-radius: 3px;   
-    }
-}
 
  .hero_button{
     background-image: linear-gradient(to right bottom, #ff79da, #e76ed9, #ce65d8, #b25dd7, #9356d5);

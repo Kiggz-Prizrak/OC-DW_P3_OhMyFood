@@ -96,6 +96,24 @@ footer a {
     display: block;
   }
 }
+.new_button_position {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.new_button_position .button_new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  position: absolute;
+  width: 120px;
+  height: 35px;
+  background-color: #99E2D0;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -106,9 +124,7 @@ footer a {
   box-shadow: 1px 1px 10px #858585;
   margin-bottom: 30px;
   min-width: 22%;
-}
-.card img {
-  height: auto;
+  height: 375px;
 }
 .card .cardContent {
   transition: all 100ms;
@@ -117,6 +133,9 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.card .cardContent img {
+  object-fit: cover;
 }
 .card h3 {
   margin: 0px 0px 15px 0px;
@@ -172,6 +191,9 @@ footer a {
   margin: 0px;
   padding-left: 15px;
   padding-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .repas .typeRepas {
   width: 100%;
@@ -181,7 +203,6 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
   padding-right: 15px;
-  flex-wrap: wrap;
 }
 .repas .valid {
   justify-content: center;
@@ -191,9 +212,12 @@ footer a {
   width: 0px;
   transition: transform 5000ms;
 }
+.repas:hover .typeRepas {
+  width: 75%;
+}
 .repas:hover .valid {
   animation: validSlide 75ms;
-  width: 100px;
+  width: 25%;
   display: flex;
 }
 .repas:hover .valid i {
@@ -211,12 +235,13 @@ footer a {
 }
 .logo img {
   height: auto;
-  width: 300px;
+  width: 275px;
 }
 
 img {
   height: 280px;
   width: 100%;
+  object-fit: cover;
 }
 
 .filter {
@@ -314,20 +339,6 @@ i.footer_icon {
   font-size: 50px;
 }
 
-.new_button_position {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.new_button_position .button_new {
-  margin: 15px;
-  position: absolute;
-  width: 120px;
-  height: 35px;
-  background-color: #99E2D0;
-  border: none;
-  border-radius: 3px;
-}
-
 .hero_button {
   background-image: linear-gradient(to right bottom, #ff79da, #e76ed9, #ce65d8, #b25dd7, #9356d5);
   color: #FFFFFF;
@@ -407,6 +418,11 @@ i.footer_icon {
 .fonctionnement {
   background-color: #FFFFFF;
   padding: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.fonctionnement h2 {
+  text-align: center;
 }
 
 .fonctionnement_filter {
@@ -431,6 +447,12 @@ i.footer_icon {
 }
 .card_container a {
   width: 100%;
+}
+
+.bloc {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title_restaurants {
@@ -563,8 +585,7 @@ i.footer_icon {
   background-color: #F6F6F6;
   padding: 25px;
   padding-top: 0px;
-  width: 27%;
-  min-width: 430px;
+  min-width: 300px;
 }
 .menu h2 {
   margin: 0px;
