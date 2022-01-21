@@ -603,6 +603,7 @@ i.footer_icon {
 }
 
 .heart_title_position {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,7 +612,7 @@ i.footer_icon {
   width: 0px;
 }
 .heart_title_position:hover i.heart_hover {
-  width: 100%;
+  width: 33px;
 }
 
 .command {
