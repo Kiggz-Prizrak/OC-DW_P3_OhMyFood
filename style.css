@@ -602,6 +602,18 @@ i.footer_icon {
   padding-bottom: 30px;
 }
 
+.heart_title_position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart_title_position i.heart_hover {
+  width: 0px;
+}
+.heart_title_position:hover i.heart_hover {
+  width: 100%;
+}
+
 .command {
   display: flex;
   align-items: center;
