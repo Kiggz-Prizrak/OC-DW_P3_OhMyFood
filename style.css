@@ -622,6 +622,10 @@ i.footer_icon {
   .hero_title {
     height: 300px;
   }
+
+  h1 {
+    font-size: 23px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
